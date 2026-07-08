@@ -1,9 +1,11 @@
 import { Link, NavLink as RouterNavLink, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { useScrolled } from "@/hooks/useScrolled";
 import { navLinks } from "@/data/services";
 import { Logo } from "@/components/common/Logo";
 import { Container } from "@/components/common/Container";
 import { Button } from "@/components/ui/button";
+import { LanguageSwitcher } from "@/components/common/LanguageSwitcher";
 import { cn } from "@/lib/utils";
 
 // Pages with a full-bleed dark hero/banner behind the navbar can start transparent.
@@ -12,6 +14,7 @@ import { cn } from "@/lib/utils";
 const TRANSPARENT_HERO_PATHS = new Set(["/", "/rooms", "/gallery", "/about", "/contact"]);
 
 export function Navbar() {
+  const { t } = useTranslation();
   const scrolled = useScrolled();
   const location = useLocation();
 
@@ -49,19 +52,22 @@ export function Navbar() {
                     )
                   }
                 >
-                  {link.label}
+                  {t(`nav.${link.key}`)}
                 </RouterNavLink>
               </li>
             ))}
           </ul>
 
-          <Button
-            render={<Link to="/rooms" />}
-            nativeButton={false}
-            className="h-9 rounded-full bg-accent px-4 text-sm hover:bg-accent/90 lg:h-10 lg:px-6 lg:text-base"
-          >
-            Book Now
-          </Button>
+          <div className="flex items-center gap-2 lg:gap-3">
+            <LanguageSwitcher dark={solid} />
+            <Button
+              render={<Link to="/rooms" />}
+              nativeButton={false}
+              className="h-9 rounded-full bg-accent px-4 text-sm hover:bg-accent/90 lg:h-10 lg:px-6 lg:text-base"
+            >
+              {t("nav.bookNow")}
+            </Button>
+          </div>
         </nav>
       </Container>
     </header>

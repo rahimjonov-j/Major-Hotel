@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Container } from "@/components/common/Container";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { Reveal } from "@/components/common/Reveal";
@@ -9,13 +10,15 @@ import { cn } from "@/lib/utils";
 const preview = galleryItems.slice(0, 6);
 
 export function GalleryPreview() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-24 sm:py-32">
       <Container>
         <SectionHeading
-          eyebrow="Gallery"
-          title="A Glimpse Inside Aurelia"
-          description="From sunlit rooms to the infinity pool at dusk — take a closer look."
+          eyebrow={t("galleryPreview.eyebrow")}
+          title={t("galleryPreview.title", { hotelName: t("brand.name") })}
+          description={t("galleryPreview.description")}
         />
 
         <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-5">
@@ -32,7 +35,7 @@ export function GalleryPreview() {
                 <div className="h-full min-h-[160px] overflow-hidden">
                   <img
                     src={item.image}
-                    alt={item.alt}
+                    alt={t(`galleryAlt.${item.altKey}`)}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
                   />
@@ -44,7 +47,7 @@ export function GalleryPreview() {
 
         <div className="mt-12 text-center">
           <Link to="/gallery" className={cn(buttonVariants({ variant: "outline" }), "h-11 rounded-full border-primary px-7 text-primary hover:bg-primary hover:text-primary-foreground")}>
-            View Full Gallery
+            {t("galleryPreview.viewFull")}
           </Link>
         </div>
       </Container>

@@ -7,6 +7,7 @@ import {
   ShieldCheck,
   type LucideIcon,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Container } from "@/components/common/Container";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { Reveal } from "@/components/common/Reveal";
@@ -22,13 +23,15 @@ const icons: Record<string, LucideIcon> = {
 };
 
 export function WhyChooseUs() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-24 sm:py-32">
       <Container>
         <SectionHeading
-          eyebrow="Why Choose Us"
-          title="Everything You Need for a Perfect Stay"
-          description="Small touches, consistently delivered — the things that make a stay feel effortless."
+          eyebrow={t("whyChooseUs.eyebrow")}
+          title={t("whyChooseUs.title")}
+          description={t("whyChooseUs.description")}
         />
 
         <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -41,10 +44,10 @@ export function WhyChooseUs() {
                     <Icon size={26} />
                   </span>
                   <h3 className="mt-6 font-heading text-lg font-semibold text-foreground">
-                    {service.title}
+                    {t(`whyChooseUs.items.${service.key}.title`)}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {service.description}
+                    {t(`whyChooseUs.items.${service.key}.description`)}
                   </p>
                 </div>
               </Reveal>

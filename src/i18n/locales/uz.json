@@ -1,0 +1,230 @@
+{
+  "brand": {
+    "name": "Major",
+    "fullName": "Major Hotel",
+    "tagline": "Hashamat osoyishtalik bilan uyg'unlashgan joy"
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "rooms": "Xonalar",
+    "gallery": "Galereya",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa",
+    "bookNow": "Bron qilish"
+  },
+  "hero": {
+    "title": "Dam olish uchun yaratilgan sohil oromgohi",
+    "description": "{{hotelName}} bilan tanishing — osoyishta hashamat, samimiy xizmat va okean manzarasi uyg'unlashgan, yana qaytgingiz keladigan dam olish.",
+    "bookNow": "Bron qilish",
+    "exploreRooms": "Xonalarni ko'rish"
+  },
+  "booking": {
+    "checkIn": "Kelish sanasi",
+    "checkOut": "Ketish sanasi",
+    "guests": "Mehmonlar",
+    "guest_one": "{{count}} mehmon",
+    "guest_other": "{{count}} mehmon",
+    "search": "Qidirish"
+  },
+  "about": {
+    "eyebrow": "Mehmonxona haqida",
+    "title": "Siz uchun yaratilgan sohilning osoyishta go'shasi",
+    "description": "{{hotelName}} shahar sohilga tutashgan joyda joylashgan — sokin tonglar, uzoq davom etadigan kechki ovqatlar va haqiqiy dam olish uchun yaratilgan makon. Har bir xona, har bir taom va har bir detal bitta g'oya atrofida shakllangan: qulaylikingiz hech qanday harakatni talab qilmasligi kerak.",
+    "statValue": "15+",
+    "statLabel": "yillik sokin va unutilmas dam olishni yaratish tajribasi",
+    "learnMore": "Bizning tariximiz haqida ko'proq bilish →"
+  },
+  "amenities": {
+    "wifi": "Bepul Wi-Fi",
+    "restaurant": "Restoran",
+    "pool": "Suzish havzasi",
+    "parking": "Bepul avtoturargoh",
+    "smartTv": "Smart TV",
+    "rainShower": "Yomg'ir dush",
+    "minibar": "Mini-bar",
+    "ac": "Konditsioner",
+    "cityView": "Shahar manzarasi",
+    "privateBalcony": "Shaxsiy balkon",
+    "soakingTub": "Chuqur vanna",
+    "loungeArea": "Dam olish zonasi",
+    "nespresso": "Nespresso kofe mashinasi",
+    "oceanView": "Okean manzarasi",
+    "gardenTerrace": "Bog' manzarali terrasa",
+    "miniFridge": "Mini muzlatgich",
+    "workDesk": "Ish stoli",
+    "gardenView": "Bog' manzarasi"
+  },
+  "roomsSection": {
+    "eyebrow": "Turar joy",
+    "title": "Mashhur xonalar va lyukslar",
+    "description": "Har bir xona qaytib kelgingiz keladigan sokin, shaxsiy makon sifatida yaratilgan — puxta jihozlangan va yuqori sifatli materiallar bilan bezatilgan."
+  },
+  "rooms": {
+    "deluxeKingRoom": {
+      "name": "Delyuks King xona",
+      "shortDescription": "Yumshoq King krovat, shahar manzarasi va issiq eman rangidagi bezaklarga ega nafis xona.",
+      "description": "Delyuks King xona yumshoq King o'lchamdagi krovat, shahar manzarasiga ochiladigan pol-shift derazalar va mramor hammomi bilan qulaylik va sokin nafislikni birlashtiradi. Mini-bar, alohida ish joyi va qorong'ilashtiruvchi pardalar kabi puxta detallar uni ham ish safarlari, ham dam olish uchun mos qiladi.",
+      "bedType": "1 ta King krovat"
+    },
+    "executiveSuite": {
+      "name": "Executive lyuks",
+      "shortDescription": "Uzoq muddatli turish uchun ideal, alohida mehmonxona zonasiga ega keng lyuks.",
+      "description": "Ko'proq bo'sh joyni xohlaydigan sayohatchilar uchun yaratilgan Executive lyuksning alohida mehmonxona va yotoqxona zonalarida dam oling. Shaxsiy balkon, chuqur vanna, yuqori sifatli choyshab-yostiqlar va to'liq jihozlangan dam olish zonasidan bahramand bo'ling — barchasi mehmonxonaning sohilbo'yi uslubidan ilhomlangan sokin, zamonaviy ranglarda.",
+      "bedType": "1 ta King krovat + divan-krovat"
+    },
+    "premierDoubleRoom": {
+      "name": "Premier ikki krovatli xona",
+      "shortDescription": "Oilalar yoki do'stlar uchun ideal, ikkita Queen krovatga ega yorug' va keng xona.",
+      "description": "Premier ikki krovatli xona oilalar va guruhlar uchun keng joy taklif etadi: ikkita yumshoq Queen krovat, mulohaza uchun qulay burchak va mo'l tabiiy yorug'lik. Bog' manzarali terrasa va mahalliy uslubdagi bezak uzoq muddatli turish uchun issiq va samimiy muhit yaratadi.",
+      "bedType": "2 ta Queen krovat"
+    }
+  },
+  "roomCard": {
+    "perNight": "/ kecha",
+    "guests": "Mehmon",
+    "viewDetails": "Batafsil"
+  },
+  "roomDetails": {
+    "startingFrom": "Narxi",
+    "perNight": "/ kecha",
+    "bookNow": "Bron qilish",
+    "noPayment": "Bugun to'lov talab qilinmaydi",
+    "amenitiesTitle": "Qulayliklar",
+    "youMightAlsoLike": "Sizga yoqishi mumkin",
+    "guests": "Mehmon"
+  },
+  "whyChooseUs": {
+    "eyebrow": "Nega bizni tanlaysiz",
+    "title": "Mukammal dam olish uchun barcha narsa",
+    "description": "Doimiy taqdim etiladigan kichik detallar — dam olishni osonlashtiradigan narsalar.",
+    "items": {
+      "luxuryRooms": { "title": "Hashamatli xonalar", "description": "Yuqori sifatli choyshab-yostiqlar va sokin, nafis interyerga ega puxta loyihalashtirilgan xonalar." },
+      "reception": { "title": "24/7 qabulxona", "description": "Konsyerj jamoamiz sizga har qanday vaqtda yordam berishga tayyor." },
+      "breakfast": { "title": "Bepul nonushta", "description": "Kuningizni har bir turishga kiritilgan mazali nonushta bilan boshlang." },
+      "location": { "title": "Eng yaxshi joylashuv", "description": "Sohil bo'yidan bir necha qadam narida, shaharning eng yaxshi restoranlari va madaniy joylariga yaqin." },
+      "wifi": { "title": "Tezkor Wi-Fi", "description": "Mehmonxona va uning hududi bo'ylab bepul yuqori tezlikdagi Wi-Fi." },
+      "parking": { "title": "Xavfsiz avtoturargoh", "description": "Mehmonxona hududida kecha-kunduz nazorat ostidagi avtoturargoh." }
+    }
+  },
+  "galleryPreview": {
+    "eyebrow": "Galereya",
+    "title": "{{hotelName}} ichkarisiga bir nazar",
+    "description": "Quyosh nuri tushib turgan xonalardan tortib, shom paytidagi cheksiz havzagacha — yaqindan tomosha qiling.",
+    "viewFull": "To'liq galereyani ko'rish"
+  },
+  "galleryPage": {
+    "eyebrow": "Galereya",
+    "title": "{{hotelName}} ichkarisiga bir nazar",
+    "description": "Xonalar, lobbi, restoran, havza va hudud — mehmonxonani toifalar bo'yicha ko'ring."
+  },
+  "galleryCategories": {
+    "all": "Barchasi",
+    "Rooms": "Xonalar",
+    "Lobby": "Lobbi",
+    "Restaurant": "Restoran",
+    "Pool": "Havza",
+    "Exterior": "Hudud"
+  },
+  "galleryAlt": {
+    "deluxeKing": "Delyuks King xona",
+    "lobbyMain": "Katta zinapoyali mehmonxona lobbisi",
+    "poolInfinity": "Sohil manzarali cheksiz havza",
+    "restaurantMain": "Yuqori darajali restoran",
+    "exteriorFacade": "Mehmonxona tashqi ko'rinishi",
+    "roomSuite": "Executive lyuksning mehmonxona zonasi",
+    "poolLoungers": "Shom paytida havza bo'yidagi shezlonglar",
+    "lobbyLounge": "Lobbidagi dam olish zonasi",
+    "restaurantBar": "Mehmonxona bar va lounge zonasi",
+    "exteriorGrounds": "Mehmonxona hududi va bog'lari",
+    "roomSuiteAlt": "Premier ikki krovatli xona",
+    "poolDeck": "Kabinalari bilan havza terrasasi"
+  },
+  "testimonialsSection": {
+    "eyebrow": "Mehmonlar fikri",
+    "title": "Mehmonlarimizning hikoyalari",
+    "description": "Biz muvaffaqiyatni har bir turish orqali o'lchaymiz — mehmonlarimiz nima deyishini o'qing."
+  },
+  "testimonials": {
+    "amelia": "Har bir detal o'ylab qilingan edi — qabulxonadagi issiq kutib olishdan tortib, xonamizdan ko'rinadigan manzaragacha. Bu yillar davomidagi eng osoyishta dam olishimiz bo'ldi.",
+    "daniel": "Xodimlar biz o'zimiz ham bilmagan ehtiyojlarimizni oldindan sezishdi. Faqat tomdagi nonushta uchun ham qaytib kelishga arziydi.",
+    "haruto": "Sokin, nafis va benuqson toza. Havza atrofi shaharni kezib charchaganimizdan so'ng eng sevimli dam olish joyimizga aylandi.",
+    "sofia": "Hashamat va qulaylikning mukammal muvozanati. Bron qilish juda oson bo'ldi va xona internetda ko'rgan barcha suratlardan ham yaxshiroq chiqdi."
+  },
+  "ctaBanner": {
+    "title": "Unutilmas dam olishga tayyormisiz?",
+    "description": "Bugun xonangizni bron qiling, qolganini bizga qo'ying.",
+    "button": "Xonani bron qilish"
+  },
+  "roomsPage": {
+    "eyebrow": "Turar joy",
+    "title": "Xonalar va lyukslar",
+    "description": "O'zingizga mos joyni toping — samimiy xonalardan tortib to to'liq lyukslargacha."
+  },
+  "aboutPage": {
+    "eyebrow": "Bizning tariximiz",
+    "title": "{{hotelName}} haqida",
+    "description": "Sohilda o'n besh yillik osoyishta mehmondo'stlik.",
+    "whoWeAre": "Biz kimmiz",
+    "heading": "Uyga qaytgandek tuyuladigan mehmondo'stlik",
+    "paragraph1": "{{hotelName}} haqiqiy hashamat ortiqchalikda emas, balki osonlikda deb ishonish asosida tashkil etilgan. Kelgan daqiqangizdan boshlab, jamoamiz e'tiborsiz qolib, siz shunchaki dam olishingiz uchun ishlaydi. Har bir xona, taom va detal shu falsafa asosida shakllangan.",
+    "paragraph2": "Bugungi kunda {{shortName}} o'n yildan ortiq vaqt oldin eshiklarini ochgan paytdagi kabi detallarga bir xil e'tibor bilan mustaqil boshqarilmoqda.",
+    "journey": "Bizning yo'limiz",
+    "story": {
+      "vision": { "year": "2009", "title": "G'oya tug'ildi", "text": "{{shortName}} eshiklarini oddiy va'da bilan ochdi: soxta emas, samimiy tuyuladigan mehmondo'stlik." },
+      "expansion": { "year": "2015", "title": "Hudud kengaytirildi", "text": "Yangi lyukslar, bog'lar va o'ziga xos cheksiz havza sohilbo'yi oromgohini to'ldirdi." },
+      "recognition": { "year": "2024", "title": "Mukammallik uchun tan olindi", "text": "Yetakchi sayohat nashrlari tomonidan mintaqadagi eng yaxshi butik-mehmonxonalar qatoriga kiritildi." }
+    }
+  },
+  "contactPage": {
+    "eyebrow": "Biz bilan bog'laning",
+    "title": "Aloqa",
+    "description": "Turishingiz haqida savollar bormi? Jamoamiz kuningizning istalgan vaqtida yordam berishga tayyor.",
+    "details": {
+      "address": "Manzil",
+      "phone": "Telefon",
+      "email": "Email",
+      "hours": "Ish vaqti",
+      "hoursValue": "Qabulxona kecha-kunduz ochiq"
+    },
+    "form": {
+      "fullName": "To'liq ism",
+      "namePlaceholder": "Aziz Karimov",
+      "email": "Email manzil",
+      "emailPlaceholder": "aziz@email.com",
+      "subject": "Mavzu",
+      "subjectPlaceholder": "Bron qilish bo'yicha savol",
+      "message": "Xabar",
+      "messagePlaceholder": "Sizga qanday yordam bera olishimizni yozing...",
+      "send": "Xabarni yuborish",
+      "sending": "Yuborilmoqda...",
+      "successTitle": "Xabar yuborildi",
+      "successText": "Biz bilan bog'langaningiz uchun rahmat — jamoamiz 24 soat ichida javob beradi.",
+      "sendAnother": "Yana xabar yuborish",
+      "errors": {
+        "name": "Iltimos, to'liq ismingizni kiriting",
+        "email": "Iltimos, to'g'ri email manzil kiriting",
+        "subject": "Iltimos, mavzuni kiriting",
+        "message": "Xabar kamida 10 ta belgidan iborat bo'lishi kerak"
+      }
+    }
+  },
+  "footer": {
+    "description": "Puxta dizayn va samimiy mehmondo'stlik unutilmas dam olish uchun uyg'unlashgan osoyishta sohilbo'yi oromgohi.",
+    "quickLinks": "Tezkor havolalar",
+    "contact": "Aloqa",
+    "newsletter": "Yangiliklar",
+    "newsletterText": "Mavsumiy takliflar va mehmonxona yangiliklariga obuna bo'ling.",
+    "emailPlaceholder": "Emailingiz",
+    "join": "Obuna bo'lish",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "designed": "Har bir mehmon uchun g'amxo'rlik bilan yaratilgan."
+  },
+  "notFound": {
+    "title": "Bu sahifa allaqachon chiqib ketgan",
+    "description": "Siz qidirayotgan sahifa mavjud emas yoki boshqa joyga ko'chirilgan.",
+    "backHome": "Bosh sahifaga qaytish"
+  },
+  "language": {
+    "label": "Til"
+  }
+}

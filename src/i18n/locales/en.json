@@ -1,0 +1,230 @@
+{
+  "brand": {
+    "name": "Major",
+    "fullName": "Major Hotel",
+    "tagline": "Where Luxury Meets Serenity"
+  },
+  "nav": {
+    "home": "Home",
+    "rooms": "Rooms",
+    "gallery": "Gallery",
+    "about": "About",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "title": "A Coastal Escape Built for Rest",
+    "description": "Discover {{hotelName}}, where quiet luxury, warm service, and ocean views come together for a stay you'll want to repeat.",
+    "bookNow": "Book Now",
+    "exploreRooms": "Explore Rooms"
+  },
+  "booking": {
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "guest_one": "{{count}} Guest",
+    "guest_other": "{{count}} Guests",
+    "search": "Search"
+  },
+  "about": {
+    "eyebrow": "About the Hotel",
+    "title": "A Quiet Corner of the Coast, Made for You",
+    "description": "{{hotelName}} sits where the city softens into the shoreline — a place built for slow mornings, long dinners, and rest that actually feels like rest. Every room, every meal, and every detail is shaped around one idea: your comfort should never require effort.",
+    "statValue": "15+",
+    "statLabel": "Years of crafting quiet, memorable stays",
+    "learnMore": "Learn more about our story →"
+  },
+  "amenities": {
+    "wifi": "Free Wi-Fi",
+    "restaurant": "Restaurant",
+    "pool": "Swimming Pool",
+    "parking": "Free Parking",
+    "smartTv": "Smart TV",
+    "rainShower": "Rain Shower",
+    "minibar": "Minibar",
+    "ac": "Air Conditioning",
+    "cityView": "City View",
+    "privateBalcony": "Private Balcony",
+    "soakingTub": "Soaking Tub",
+    "loungeArea": "Lounge Area",
+    "nespresso": "Nespresso Machine",
+    "oceanView": "Ocean View",
+    "gardenTerrace": "Garden Terrace",
+    "miniFridge": "Mini Fridge",
+    "workDesk": "Work Desk",
+    "gardenView": "Garden View"
+  },
+  "roomsSection": {
+    "eyebrow": "Accommodation",
+    "title": "Featured Rooms & Suites",
+    "description": "Each room is designed as a calm, private space to return to — thoughtfully furnished and finished with premium materials."
+  },
+  "rooms": {
+    "deluxeKingRoom": {
+      "name": "Deluxe King Room",
+      "shortDescription": "A refined retreat with a plush king bed, city views, and warm oak accents.",
+      "description": "The Deluxe King Room blends comfort and quiet sophistication with a plush king-size bed, floor-to-ceiling windows overlooking the city skyline, and a marble en-suite bathroom. Thoughtful details like a curated minibar, a dedicated workspace, and blackout drapery make it equally suited to business travel and leisurely stays.",
+      "bedType": "1 King Bed"
+    },
+    "executiveSuite": {
+      "name": "Executive Suite",
+      "shortDescription": "A spacious suite with a separate living area, perfect for extended stays.",
+      "description": "Unwind in the Executive Suite's separate living and sleeping areas, designed for travelers who want room to breathe. Enjoy a private balcony, a deep soaking tub, premium bedding, and a fully stocked lounge area — all wrapped in a calm, contemporary palette inspired by the hotel's coastal setting.",
+      "bedType": "1 King Bed + Sofa Bed"
+    },
+    "premierDoubleRoom": {
+      "name": "Premier Double Room",
+      "shortDescription": "Bright and airy, with two queen beds ideal for families or friends.",
+      "description": "The Premier Double Room offers generous space for families and groups, featuring two plush queen beds, a cozy reading nook, and abundant natural light. A garden-facing terrace and locally inspired decor create a relaxed, welcoming atmosphere for longer stays.",
+      "bedType": "2 Queen Beds"
+    }
+  },
+  "roomCard": {
+    "perNight": "/ night",
+    "guests": "Guests",
+    "viewDetails": "View Details"
+  },
+  "roomDetails": {
+    "startingFrom": "Starting from",
+    "perNight": "/ night",
+    "bookNow": "Book Now",
+    "noPayment": "No payment required today",
+    "amenitiesTitle": "Amenities",
+    "youMightAlsoLike": "You Might Also Like",
+    "guests": "Guests"
+  },
+  "whyChooseUs": {
+    "eyebrow": "Why Choose Us",
+    "title": "Everything You Need for a Perfect Stay",
+    "description": "Small touches, consistently delivered — the things that make a stay feel effortless.",
+    "items": {
+      "luxuryRooms": { "title": "Luxury Rooms", "description": "Thoughtfully designed rooms with premium bedding and calm, elegant interiors." },
+      "reception": { "title": "24/7 Reception", "description": "Our concierge team is on hand around the clock for whatever you need." },
+      "breakfast": { "title": "Free Breakfast", "description": "Start your day with a curated breakfast spread, included in every stay." },
+      "location": { "title": "Best Location", "description": "Steps from the waterfront, with the city's finest dining and culture nearby." },
+      "wifi": { "title": "Fast Wi-Fi", "description": "Complimentary high-speed Wi-Fi throughout the hotel and grounds." },
+      "parking": { "title": "Secure Parking", "description": "Monitored, on-site parking available for guests day and night." }
+    }
+  },
+  "galleryPreview": {
+    "eyebrow": "Gallery",
+    "title": "A Glimpse Inside {{hotelName}}",
+    "description": "From sunlit rooms to the infinity pool at dusk — take a closer look.",
+    "viewFull": "View Full Gallery"
+  },
+  "galleryPage": {
+    "eyebrow": "Gallery",
+    "title": "A Glimpse Inside {{hotelName}}",
+    "description": "Rooms, lobby, restaurant, pool, and grounds — browse the hotel by category."
+  },
+  "galleryCategories": {
+    "all": "All",
+    "Rooms": "Rooms",
+    "Lobby": "Lobby",
+    "Restaurant": "Restaurant",
+    "Pool": "Pool",
+    "Exterior": "Exterior"
+  },
+  "galleryAlt": {
+    "deluxeKing": "Deluxe King Room",
+    "lobbyMain": "Hotel lobby with grand staircase",
+    "poolInfinity": "Infinity pool overlooking the coast",
+    "restaurantMain": "Fine dining restaurant",
+    "exteriorFacade": "Hotel exterior facade",
+    "roomSuite": "Executive Suite living area",
+    "poolLoungers": "Poolside loungers at sunset",
+    "lobbyLounge": "Lobby lounge seating area",
+    "restaurantBar": "Hotel bar and lounge",
+    "exteriorGrounds": "Hotel grounds and gardens",
+    "roomSuiteAlt": "Premier Double Room",
+    "poolDeck": "Pool deck with cabanas"
+  },
+  "testimonialsSection": {
+    "eyebrow": "Guest Reviews",
+    "title": "Stories From Our Guests",
+    "description": "We measure our success one stay at a time — here's what guests have to say."
+  },
+  "testimonials": {
+    "amelia": "Every detail felt considered, from the warm welcome at check-in to the view from our suite. Easily the most relaxing stay we've had in years.",
+    "daniel": "The staff anticipated things we didn't even know we needed. The rooftop breakfast alone is worth coming back for.",
+    "haruto": "Quiet, elegant, and impeccably clean. The pool area was our favorite spot to unwind after long days exploring the city.",
+    "sofia": "A perfect balance of luxury and comfort. Booking was effortless and the room exceeded every photo we'd seen online."
+  },
+  "ctaBanner": {
+    "title": "Ready for a Stay You Won't Forget?",
+    "description": "Secure your room today and let us take care of the rest.",
+    "button": "Book Your Room"
+  },
+  "roomsPage": {
+    "eyebrow": "Accommodation",
+    "title": "Rooms & Suites",
+    "description": "Find the space that fits your stay, from intimate rooms to full suites."
+  },
+  "aboutPage": {
+    "eyebrow": "Our Story",
+    "title": "About {{hotelName}}",
+    "description": "Fifteen years of quiet hospitality on the coast.",
+    "whoWeAre": "Who We Are",
+    "heading": "Hospitality That Feels Like Coming Home",
+    "paragraph1": "{{hotelName}} was founded on the idea that true luxury isn't about excess — it's about ease. From the moment you arrive, our team works quietly in the background so you can simply enjoy your time away. Every room, meal, and detail is shaped by that philosophy.",
+    "paragraph2": "Today, {{shortName}} remains independently run, with the same attention to detail that opened its doors over a decade ago.",
+    "journey": "Our Journey",
+    "story": {
+      "vision": { "year": "2009", "title": "A Vision Takes Shape", "text": "{{shortName}} opened its doors with a simple promise: hospitality that feels personal, never performative." },
+      "expansion": { "year": "2015", "title": "Expanding the Grounds", "text": "New suites, gardens, and the signature infinity pool were added to complete the coastal retreat." },
+      "recognition": { "year": "2024", "title": "Recognized for Excellence", "text": "Named among the region's top boutique hotels for service and design by leading travel guides." }
+    }
+  },
+  "contactPage": {
+    "eyebrow": "Get in Touch",
+    "title": "Contact Us",
+    "description": "Questions about your stay? Our team is here to help, any time of day.",
+    "details": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Working Hours",
+      "hoursValue": "Front desk open 24/7"
+    },
+    "form": {
+      "fullName": "Full Name",
+      "namePlaceholder": "Jane Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "jane@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Reservation enquiry",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "successTitle": "Message Sent",
+      "successText": "Thank you for reaching out — our team will reply within 24 hours.",
+      "sendAnother": "Send another message",
+      "errors": {
+        "name": "Please enter your full name",
+        "email": "Please enter a valid email address",
+        "subject": "Please enter a subject",
+        "message": "Message should be at least 10 characters"
+      }
+    }
+  },
+  "footer": {
+    "description": "A serene coastal retreat where thoughtful design and warm hospitality come together for an unforgettable stay.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "newsletter": "Newsletter",
+    "newsletterText": "Subscribe for seasonal offers and hotel news.",
+    "emailPlaceholder": "Your email",
+    "join": "Join",
+    "rights": "All rights reserved.",
+    "designed": "Designed with care for every guest."
+  },
+  "notFound": {
+    "title": "This Page Has Checked Out",
+    "description": "The page you're looking for doesn't exist or may have been moved.",
+    "backHome": "Back to Home"
+  },
+  "language": {
+    "label": "Language"
+  }
+}

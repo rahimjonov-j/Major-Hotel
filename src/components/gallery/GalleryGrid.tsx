@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { X } from "lucide-react";
 import { galleryCategories, galleryItems } from "@/data/gallery";
 import { cn } from "@/lib/utils";
 
 export function GalleryGrid() {
+  const { t } = useTranslation();
   const [category, setCategory] = useState<(typeof galleryCategories)[number]>("All");
   const [lightbox, setLightbox] = useState<string | null>(null);
 
@@ -27,7 +29,7 @@ export function GalleryGrid() {
                 : "border-border bg-white text-foreground/70 hover:border-primary/50 hover:text-primary",
             )}
           >
-            {cat}
+            {cat === "All" ? t("galleryCategories.all") : t(`galleryCategories.${cat}`)}
           </button>
         ))}
       </div>
@@ -51,12 +53,14 @@ export function GalleryGrid() {
             >
               <img
                 src={item.image}
-                alt={item.alt}
+                alt={t(`galleryAlt.${item.altKey}`)}
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
               />
               <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/50 via-transparent to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <span className="text-sm font-medium text-white">{item.category}</span>
+                <span className="text-sm font-medium text-white">
+                  {t(`galleryCategories.${item.category}`)}
+                </span>
               </div>
             </motion.button>
           ))}
@@ -84,7 +88,7 @@ export function GalleryGrid() {
               animate={{ scale: 1 }}
               exit={{ scale: 0.95 }}
               src={lightbox}
-              alt="Gallery preview"
+              alt=""
               className="max-h-[85vh] max-w-full rounded-xl object-contain"
               onClick={(e) => e.stopPropagation()}
             />

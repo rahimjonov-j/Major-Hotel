@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { CalendarDays, Search, Users } from "lucide-react";
 import { Label } from "@/components/ui/label";
 import {
@@ -12,6 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 export function BookingCard() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
@@ -34,7 +36,7 @@ export function BookingCard() {
       <div className="flex flex-col gap-1.5">
         <Label htmlFor="check-in" className="text-xs font-medium text-muted-foreground">
           <CalendarDays size={14} className="text-primary" />
-          Check-in
+          {t("booking.checkIn")}
         </Label>
         <input
           id="check-in"
@@ -48,7 +50,7 @@ export function BookingCard() {
       <div className="flex flex-col gap-1.5">
         <Label htmlFor="check-out" className="text-xs font-medium text-muted-foreground">
           <CalendarDays size={14} className="text-primary" />
-          Check-out
+          {t("booking.checkOut")}
         </Label>
         <input
           id="check-out"
@@ -62,16 +64,16 @@ export function BookingCard() {
       <div className="flex flex-col gap-1.5">
         <Label htmlFor="guests" className="text-xs font-medium text-muted-foreground">
           <Users size={14} className="text-primary" />
-          Guests
+          {t("booking.guests")}
         </Label>
         <Select value={guests} onValueChange={(value) => setGuests(value ?? "2")}>
           <SelectTrigger id="guests" className="h-11 w-full">
-            <SelectValue placeholder="Guests" />
+            <SelectValue placeholder={t("booking.guests")} />
           </SelectTrigger>
           <SelectContent>
             {["1", "2", "3", "4", "5+"].map((n) => (
               <SelectItem key={n} value={n}>
-                {n} {n === "1" ? "Guest" : "Guests"}
+                {n === "5+" ? `5+ ${t("booking.guests")}` : t("booking.guest", { count: Number(n) })}
               </SelectItem>
             ))}
           </SelectContent>
@@ -83,7 +85,7 @@ export function BookingCard() {
         className="h-11 w-full gap-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90"
       >
         <Search size={16} />
-        Search
+        {t("booking.search")}
       </Button>
     </form>
   );

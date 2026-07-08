@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { PageHeader } from "@/components/common/PageHeader";
 import { Container } from "@/components/common/Container";
 import { RoomCard } from "@/components/rooms/RoomCard";
@@ -5,12 +6,14 @@ import { rooms } from "@/data/rooms";
 import { images } from "@/utils/images";
 
 export default function Rooms() {
+  const { t } = useTranslation();
+
   return (
     <>
       <PageHeader
-        eyebrow="Accommodation"
-        title="Rooms & Suites"
-        description="Find the space that fits your stay, from intimate rooms to full suites."
+        eyebrow={t("roomsPage.eyebrow")}
+        title={t("roomsPage.title")}
+        description={t("roomsPage.description")}
         image={images.roomExecutive}
       />
 

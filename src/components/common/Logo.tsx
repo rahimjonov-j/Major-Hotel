@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
-import { hotelInfo } from "@/data/services";
 
 export function Logo({ dark = false, className }: { dark?: boolean; className?: string }) {
+  const { t } = useTranslation();
+
   return (
     <Link
       to="/"
@@ -12,7 +14,7 @@ export function Logo({ dark = false, className }: { dark?: boolean; className?: 
         className,
       )}
     >
-      {hotelInfo.name}
+      {t("brand.name")}
       <span className="text-primary">.</span>
     </Link>
   );

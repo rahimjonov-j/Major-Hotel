@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { PageHeader } from "@/components/common/PageHeader";
 import { Container } from "@/components/common/Container";
@@ -6,20 +7,22 @@ import { ContactForm } from "@/components/contact/ContactForm";
 import { hotelInfo } from "@/data/services";
 import { images } from "@/utils/images";
 
-const details = [
-  { icon: MapPin, label: "Address", value: hotelInfo.address },
-  { icon: Phone, label: "Phone", value: hotelInfo.phone },
-  { icon: Mail, label: "Email", value: hotelInfo.email },
-  { icon: Clock, label: "Working Hours", value: hotelInfo.hours },
-];
-
 export default function Contact() {
+  const { t } = useTranslation();
+
+  const details = [
+    { icon: MapPin, label: t("contactPage.details.address"), value: hotelInfo.address },
+    { icon: Phone, label: t("contactPage.details.phone"), value: hotelInfo.phone },
+    { icon: Mail, label: t("contactPage.details.email"), value: hotelInfo.email },
+    { icon: Clock, label: t("contactPage.details.hours"), value: t("contactPage.details.hoursValue") },
+  ];
+
   return (
     <>
       <PageHeader
-        eyebrow="Get in Touch"
-        title="Contact Us"
-        description="Questions about your stay? Our team is here to help, any time of day."
+        eyebrow={t("contactPage.eyebrow")}
+        title={t("contactPage.title")}
+        description={t("contactPage.description")}
         image={images.restaurantFine}
       />
 

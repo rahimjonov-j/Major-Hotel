@@ -1,19 +1,22 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { Container } from "@/components/common/Container";
 import { BookingCard } from "@/components/home/BookingCard";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { images } from "@/utils/images";
-import { hotelInfo } from "@/data/services";
 import { cn } from "@/lib/utils";
 
 export function Hero() {
+  const { t } = useTranslation();
+  const hotelName = t("brand.fullName");
+
   return (
     <section className="relative">
       <div className="relative flex h-[92vh] min-h-[620px] items-center overflow-hidden">
         <img
           src={images.heroPool}
-          alt="Aurelia Hotel infinity pool at dusk"
+          alt={hotelName}
           className="absolute inset-0 h-full w-full object-cover"
           loading="eager"
         />
@@ -27,14 +30,13 @@ export function Hero() {
             className="max-w-2xl text-white"
           >
             <span className="inline-block text-sm font-semibold tracking-[0.25em] uppercase text-white/80">
-              {hotelInfo.tagline}
+              {t("brand.tagline")}
             </span>
             <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.1] text-balance">
-              A Coastal Escape Built for Rest
+              {t("hero.title")}
             </h1>
             <p className="mt-6 max-w-lg text-base sm:text-lg text-white/85 leading-relaxed text-balance">
-              Discover {hotelInfo.fullName}, where quiet luxury, warm service, and
-              ocean views come together for a stay you'll want to repeat.
+              {t("hero.description", { hotelName })}
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Button
@@ -42,7 +44,7 @@ export function Hero() {
                 nativeButton={false}
                 className="h-12 gap-2 rounded-full bg-accent px-7 text-base hover:bg-accent/90"
               >
-                Book Now
+                {t("hero.bookNow")}
               </Button>
               <Link
                 to="/rooms"
@@ -51,7 +53,7 @@ export function Hero() {
                   "h-12 rounded-full border-2 border-white/70 bg-transparent px-7 text-base text-white hover:bg-white hover:text-foreground",
                 )}
               >
-                Explore Rooms
+                {t("hero.exploreRooms")}
               </Link>
             </div>
           </motion.div>

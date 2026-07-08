@@ -1,15 +1,14 @@
 export interface Room {
   id: string;
   slug: string;
-  name: string;
-  shortDescription: string;
-  description: string;
+  /** i18n key under `rooms.<key>` for name/shortDescription/description/bedType */
+  key: string;
   price: number;
   currency: string;
   capacity: number;
   size: number;
-  bedType: string;
   images: string[];
+  /** i18n keys under `amenities.<key>` */
   amenities: string[];
   featured?: boolean;
 }
@@ -25,7 +24,8 @@ export interface GalleryItem {
   id: string;
   category: GalleryCategory;
   image: string;
-  alt: string;
+  /** i18n key under `galleryAlt.<key>` */
+  altKey: string;
   span?: "row-span-2" | "col-span-2";
 }
 
@@ -35,23 +35,26 @@ export interface Testimonial {
   location: string;
   avatar: string;
   rating: number;
-  review: string;
+  /** i18n key under `testimonials.<key>` */
+  reviewKey: string;
 }
 
 export interface Service {
   id: string;
   icon: string;
-  title: string;
-  description: string;
+  /** i18n key under `whyChooseUs.items.<key>` */
+  key: string;
 }
 
 export interface Highlight {
   id: string;
   icon: string;
-  title: string;
+  /** i18n key under `amenities.<key>` */
+  key: string;
 }
 
 export interface NavLink {
-  label: string;
+  /** i18n key under `nav.<key>` */
+  key: string;
   href: string;
 }
