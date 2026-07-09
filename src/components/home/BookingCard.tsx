@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { CalendarDays, Search, Users } from "lucide-react";
+import { Search, Users } from "lucide-react";
 import { Label } from "@/components/ui/label";
 import {
   Select,
@@ -11,19 +11,24 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
+import { DatePicker } from "@/components/common/DatePicker";
+
+function toISODate(date: Date) {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+}
 
 export function BookingCard() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const [checkIn, setCheckIn] = useState("");
-  const [checkOut, setCheckOut] = useState("");
+  const [checkIn, setCheckIn] = useState<Date>();
+  const [checkOut, setCheckOut] = useState<Date>();
   const [guests, setGuests] = useState("2");
 
   function handleSearch(e: React.FormEvent) {
     e.preventDefault();
     const params = new URLSearchParams();
-    if (checkIn) params.set("checkIn", checkIn);
-    if (checkOut) params.set("checkOut", checkOut);
+    if (checkIn) params.set("checkIn", toISODate(checkIn));
+    if (checkOut) params.set("checkOut", toISODate(checkOut));
     params.set("guests", guests);
     navigate(`/rooms?${params.toString()}`);
   }
@@ -31,35 +36,21 @@ export function BookingCard() {
   return (
     <form
       onSubmit={handleSearch}
-      className="grid grid-cols-1 gap-4 rounded-2xl border border-border bg-white p-6 shadow-[0_20px_60px_-15px_rgba(17,24,39,0.25)] sm:grid-cols-2 lg:grid-cols-4 lg:items-end lg:gap-3 lg:p-4"
+      className="grid w-full grid-cols-1 gap-4 rounded-2xl border border-border bg-white p-6 shadow-[0_20px_60px_-15px_rgba(17,24,39,0.25)]"
     >
-      <div className="flex flex-col gap-1.5">
-        <Label htmlFor="check-in" className="text-xs font-medium text-muted-foreground">
-          <CalendarDays size={14} className="text-primary" />
-          {t("booking.checkIn")}
-        </Label>
-        <input
-          id="check-in"
-          type="date"
-          value={checkIn}
-          onChange={(e) => setCheckIn(e.target.value)}
-          className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground outline-none focus:border-primary focus:ring-3 focus:ring-primary/15"
-        />
-      </div>
+      <DatePicker
+        label={t("booking.checkIn")}
+        value={checkIn}
+        onChange={setCheckIn}
+        minDate={new Date()}
+      />
 
-      <div className="flex flex-col gap-1.5">
-        <Label htmlFor="check-out" className="text-xs font-medium text-muted-foreground">
-          <CalendarDays size={14} className="text-primary" />
-          {t("booking.checkOut")}
-        </Label>
-        <input
-          id="check-out"
-          type="date"
-          value={checkOut}
-          onChange={(e) => setCheckOut(e.target.value)}
-          className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground outline-none focus:border-primary focus:ring-3 focus:ring-primary/15"
-        />
-      </div>
+      <DatePicker
+        label={t("booking.checkOut")}
+        value={checkOut}
+        onChange={setCheckOut}
+        minDate={checkIn ?? new Date()}
+      />
 
       <div className="flex flex-col gap-1.5">
         <Label htmlFor="guests" className="text-xs font-medium text-muted-foreground">

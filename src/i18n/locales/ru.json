@@ -21,6 +21,7 @@
   "booking": {
     "checkIn": "Заезд",
     "checkOut": "Выезд",
+    "selectDate": "Выберите дату",
     "guests": "Гости",
     "guest_one": "{{count}} гость",
     "guest_few": "{{count}} гостя",
@@ -84,7 +85,7 @@
   "roomCard": {
     "perNight": "/ ночь",
     "guests": "Гостей",
-    "viewDetails": "Подробнее"
+    "viewDetails": "Забронировать"
   },
   "roomDetails": {
     "startingFrom": "Цена от",
@@ -94,6 +95,27 @@
     "amenitiesTitle": "Удобства",
     "youMightAlsoLike": "Вам может понравиться",
     "guests": "Гостей"
+  },
+  "bookingModal": {
+    "title": "Забронировать номер",
+    "description": "Заполните свои данные, и мы подтвердим вашу бронь номера {{roomName}}.",
+    "firstName": "Имя",
+    "firstNamePlaceholder": "Иван",
+    "lastName": "Фамилия",
+    "lastNamePlaceholder": "Иванов",
+    "phone": "Номер телефона",
+    "phonePlaceholder": "+998 90 123 45 67",
+    "terms": "Я согласен с правилами и условиями",
+    "bookNow": "Забронировать",
+    "booking": "Бронирование...",
+    "successTitle": "Заявка на бронь отправлена",
+    "successText": "Спасибо — наша команда свяжется с вами в ближайшее время для подтверждения брони.",
+    "close": "Закрыть",
+    "errors": {
+      "firstName": "Пожалуйста, введите имя",
+      "lastName": "Пожалуйста, введите фамилию",
+      "phone": "Пожалуйста, введите корректный номер телефона"
+    }
   },
   "whyChooseUs": {
     "eyebrow": "Почему мы",
@@ -117,7 +139,10 @@
   "galleryPage": {
     "eyebrow": "Галерея",
     "title": "Загляните внутрь {{hotelName}}",
-    "description": "Номера, лобби, ресторан, бассейн и территория — смотрите отель по категориям."
+    "description": "Номера, лобби, ресторан, бассейн и территория — смотрите отель по категориям.",
+    "close": "Закрыть просмотр",
+    "previous": "Предыдущее фото",
+    "next": "Следующее фото"
   },
   "galleryCategories": {
     "all": "Все",

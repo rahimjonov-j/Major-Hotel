@@ -21,6 +21,7 @@
   "booking": {
     "checkIn": "Check-in",
     "checkOut": "Check-out",
+    "selectDate": "Select date",
     "guests": "Guests",
     "guest_one": "{{count}} Guest",
     "guest_other": "{{count}} Guests",
@@ -82,7 +83,7 @@
   "roomCard": {
     "perNight": "/ night",
     "guests": "Guests",
-    "viewDetails": "View Details"
+    "viewDetails": "Book"
   },
   "roomDetails": {
     "startingFrom": "Starting from",
@@ -92,6 +93,27 @@
     "amenitiesTitle": "Amenities",
     "youMightAlsoLike": "You Might Also Like",
     "guests": "Guests"
+  },
+  "bookingModal": {
+    "title": "Book Your Stay",
+    "description": "Fill in your details and we'll confirm your reservation for {{roomName}}.",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "John",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Doe",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+1 234 567 890",
+    "terms": "I agree to the terms and conditions",
+    "bookNow": "Book Now",
+    "booking": "Booking...",
+    "successTitle": "Booking Request Sent",
+    "successText": "Thank you — our team will contact you shortly to confirm your reservation.",
+    "close": "Close",
+    "errors": {
+      "firstName": "Please enter your first name",
+      "lastName": "Please enter your last name",
+      "phone": "Please enter a valid phone number"
+    }
   },
   "whyChooseUs": {
     "eyebrow": "Why Choose Us",
@@ -115,7 +137,10 @@
   "galleryPage": {
     "eyebrow": "Gallery",
     "title": "A Glimpse Inside {{hotelName}}",
-    "description": "Rooms, lobby, restaurant, pool, and grounds — browse the hotel by category."
+    "description": "Rooms, lobby, restaurant, pool, and grounds — browse the hotel by category.",
+    "close": "Close preview",
+    "previous": "Previous image",
+    "next": "Next image"
   },
   "galleryCategories": {
     "all": "All",

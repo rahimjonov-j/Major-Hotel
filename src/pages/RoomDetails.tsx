@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Check, Maximize, Users, BedDouble } from "lucide-react";
 import { Container } from "@/components/common/Container";
 import { Reveal } from "@/components/common/Reveal";
 import { RoomCard } from "@/components/rooms/RoomCard";
-import { Button } from "@/components/ui/button";
+import { BookingModal } from "@/components/rooms/BookingModal";
 import { getRelatedRooms, getRoomBySlug } from "@/data/rooms";
 
 export default function RoomDetails() {
@@ -104,13 +104,11 @@ export default function RoomDetails() {
                   {t("roomDetails.perNight")}
                 </span>
               </p>
-              <Button
-                render={<Link to="/contact" />}
-                nativeButton={false}
-                className="mt-7 h-12 w-full rounded-lg bg-accent text-base hover:bg-accent/90"
-              >
-                {t("roomDetails.bookNow")}
-              </Button>
+              <BookingModal
+                roomName={name}
+                triggerLabel={t("roomDetails.bookNow")}
+                triggerClassName="mt-7 h-12 w-full rounded-lg bg-accent text-base hover:bg-accent/90"
+              />
               <p className="mt-4 text-center text-xs text-muted-foreground">
                 {t("roomDetails.noPayment")}
               </p>

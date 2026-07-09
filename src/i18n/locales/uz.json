@@ -21,6 +21,7 @@
   "booking": {
     "checkIn": "Kelish sanasi",
     "checkOut": "Ketish sanasi",
+    "selectDate": "Sanani tanlang",
     "guests": "Mehmonlar",
     "guest_one": "{{count}} mehmon",
     "guest_other": "{{count}} mehmon",
@@ -82,7 +83,7 @@
   "roomCard": {
     "perNight": "/ kecha",
     "guests": "Mehmon",
-    "viewDetails": "Batafsil"
+    "viewDetails": "Bron qilish"
   },
   "roomDetails": {
     "startingFrom": "Narxi",
@@ -92,6 +93,27 @@
     "amenitiesTitle": "Qulayliklar",
     "youMightAlsoLike": "Sizga yoqishi mumkin",
     "guests": "Mehmon"
+  },
+  "bookingModal": {
+    "title": "Xonani bron qiling",
+    "description": "Ma'lumotlaringizni kiriting, biz {{roomName}} uchun bronni tasdiqlaymiz.",
+    "firstName": "Ism",
+    "firstNamePlaceholder": "Jasur",
+    "lastName": "Familiya",
+    "lastNamePlaceholder": "Karimov",
+    "phone": "Telefon raqami",
+    "phonePlaceholder": "+998 90 123 45 67",
+    "terms": "Qonun va qoidalarga roziman",
+    "bookNow": "Bron qilish",
+    "booking": "Bron qilinmoqda...",
+    "successTitle": "Bron so'rovi yuborildi",
+    "successText": "Rahmat — jamoamiz bronni tasdiqlash uchun tez orada siz bilan bog'lanadi.",
+    "close": "Yopish",
+    "errors": {
+      "firstName": "Iltimos, ismingizni kiriting",
+      "lastName": "Iltimos, familiyangizni kiriting",
+      "phone": "Iltimos, to'g'ri telefon raqamini kiriting"
+    }
   },
   "whyChooseUs": {
     "eyebrow": "Nega bizni tanlaysiz",
@@ -115,7 +137,10 @@
   "galleryPage": {
     "eyebrow": "Galereya",
     "title": "{{hotelName}} ichkarisiga bir nazar",
-    "description": "Xonalar, lobbi, restoran, havza va hudud — mehmonxonani toifalar bo'yicha ko'ring."
+    "description": "Xonalar, lobbi, restoran, havza va hudud — mehmonxonani toifalar bo'yicha ko'ring.",
+    "close": "Ko'rishni yopish",
+    "previous": "Oldingi rasm",
+    "next": "Keyingi rasm"
   },
   "galleryCategories": {
     "all": "Barchasi",
